@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>회원정보 수정 - 땜빵맨</title>
+<!-- css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/swiper.min4.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- jquery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper.min4.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+<header class="hd">
+	<a href="javascript:history.go(-1);" class="hd_back fl"></a>
+	<h1>회원정보 수정</h1>
+</header>
+<section id="modify" class="my_form">
+	<div class="inner">
+		<form name="login" class="form_set">
+			<fieldset>
+				<legend class="blind">회원정보 수정</legend>
+				
+				<h2>아이디</h2>
+				<div class="ipbox wnbox">
+					<label for="join_id" class="blind">아이디</label>
+					<input type="text" name="id" id="join_id" value="abc123">
+				</div>
+				
+				<h2>비밀번호</h2>
+				<div class="ipbox">
+					<label for="join_pwd" class="blind">비밀번호</label>
+					<input type="password" name="pwd" id="join_pwd" placeholder="비밀번호 입력">
+				</div>
+				
+				<h2>비밀번호 확인</h2>
+				<div class="ipbox">
+					<label for="confirm_pwd" class="blind">비밀번호 확인</label>
+					<input type="password" name="pwd" id="confirm_pwd" placeholder="비밀번호 입력">
+				</div>
+				
+				<h2>닉네임</h2>
+				<div class="ipbox">
+					<label for="join_nickname" class="blind">닉네임</label>
+					<input type="text" name="nickname" id="join_nickname" value="김땜빵">
+				</div>
+				
+				<h2>휴대폰번호</h2>
+				<div class="ipbox">
+					<label for="join_phone" class="blind">휴대폰번호</label>
+					<input type="text" name="phone" id="join_phone" value="01012345678">
+					<input type="button" value="인증번호 받기" class="js-warning">
+					<span class="warning">인증 문자가 발송되었습니다.</span>
+				</div>
+				
+				<h2>인증번호</h2>
+				<div class="ipbox">
+					<label for="join_number" class="blind">인증번호</label>
+					<input type="text" name="number" id="join_number" placeholder="인증번호 4자리">
+					<input type="button" value="인증번호 확인" class="js-warning">
+					<span class="warning">인증이 승인되었습니다.</span>
+				</div>
+				
+				<h2>주소</h2>
+				<div class="ipbox ip_addr">
+					<label for="join_addr" class="blind">주소</label>
+					<div class="addr_search">
+						<input type="text" id="join_add" value="인천광역시 연수구 송도과학로 11">
+						<button type="button" class="btn_full btn_search"><span class="blind">주소검색하기</span></button>
+					</div>
+					<input type="text" value="101호">
+				</div>
+				
+				<div class="ipbox">
+					<button type="button" onclick="location.href='javascript:history.go(-1);'" class="btn_full btn_submit">확인</button>
+					<button type="button" class="outlog btn_submit">회원탈퇴</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</section>
+
+</body>
+
+</html>

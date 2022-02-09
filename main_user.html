@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>회원가입 - 땜빵맨</title>
+<!-- css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/swiper.min4.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- jquery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper.min4.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+<header class="hd hd_user">
+	<a href="main_user.html" class="logo"><span class="blind">땜빵맨</span></a>
+	<a href="alert_user.html" class="hd_alarm"></a>
+</header>
+<section id="main_user" class="main pb_70">
+	<div class="inner">
+		<div class="a_wrap">
+			<a href="write.html" class="btn_full go_btn">
+				<img src="img/ico_help.png" alt="도움요청 아이콘">
+				<span>도움 요청하기</span>
+			</a>
+		</div>
+		<div class="contents">
+<!--	아래 [임시] 텍스트는 지워주세요		-->
+			<span class="ps xy">도움 요청 내역이 없습니다.<br>[임시]리스트를 보려면 클릭![임시]</span>
+			<ul class="list_form">
+				<li>
+					<a href="view_user.html" class="clearfix">
+						<span class="state ready">요청중</span>
+						<h3 class="title shortening2">
+							도움 요청 내용입니다. 도움 요청 내용입니다. 도움요청내용입니다.도움요청요청내용입니다.
+						</h3>
+						<p class="info fl">
+							<span>인천광역시 연수구</span>
+							<span><time datetime="2020-01-01T13:00">2020-01-01 오후 01:00</time></span>
+						</p>
+						<p class="info fr">
+							<span>비용</span>
+							<span class="price">10,000원</span>
+						</p>
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="view_user_cancel.html" class="clearfix">
+						<span class="state done">취소</span>
+						<h3 class="title shortening2">
+							도움 요청 내용입니다. 도움 요청 내용입니다. 도움요청내용입니다.도움요청요청내용입니다.
+						</h3>
+						<p class="info fl">
+							<span>인천광역시 연수구</span>
+							<span><time datetime="2020-01-01T13:00">2020-01-01 오후 01:00</time></span>
+						</p>
+						<p class="info fr">
+							<span>비용</span>
+							<span class="price">10,000원</span>
+						</p>
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="view_user_now.html" class="clearfix">
+						<span class="state now">진행중</span>
+						<h3 class="title shortening2">
+							도움 요청 내용입니다. 도움 요청 내용입니다. 도움요청내용입니다.도움요청요청내용입니다.
+						</h3>
+						<p class="info fl">
+							<span>인천광역시 연수구</span>
+							<span><time datetime="2020-01-01T13:00">2020-01-01 오후 01:00</time></span>
+						</p>
+						<p class="info fr">
+							<span>비용</span>
+							<span class="price">10,000원</span>
+						</p>
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="view_user_now.html" class="clearfix">
+						<span class="state now">진행중</span>
+						<h3 class="title shortening2">
+							도움 요청 내용입니다. 도움 요청 내용입니다. 도움요청내용입니다.도움요청요청내용입니다.
+						</h3>
+						<p class="info fl">
+							<span>인천광역시 연수구</span>
+							<span><time datetime="2020-01-01T13:00">2020-01-01 오후 01:00</time></span>
+						</p>
+						<p class="info fr">
+							<span>비용</span>
+							<span class="price">10,000원</span>
+						</p>
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="view_user_cancel.html" class="clearfix">
+						<span class="state done">취소</span>
+						<h3 class="title shortening2">
+							도움 요청 내용입니다. 도움 요청 내용입니다. 도움요청내용입니다.도움요청요청내용입니다.
+						</h3>
+						<p class="info fl">
+							<span>인천광역시 연수구</span>
+							<span><time datetime="2020-01-01T13:00">2020-01-01 오후 01:00</time></span>
+						</p>
+						<p class="info fr">
+							<span>비용</span>
+							<span class="price">10,000원</span>
+						</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="a_wrap">
+			<a href="join_men.html" class="go_line">땜빵맨 신청하기</a>
+		</div>
+	</div>
+</section>
+<!-- 임시 스크립트 : 업체쪽에 보여주기 용 -->
+<script>
+	$('.list_form').hide();
+	$('.contents .ps').on('click', function() {
+		$(this).hide();
+		$('.list_form').show();
+	});
+</script>
+
+<footer class="ft bottom_fix">
+	<ul class="fnb fnb_user clearfix">
+		<li class="switch fl"><a href="main_men.html">땜빵맨전환</a></li>
+		<li class="home fl"><a href="main_user.html">HOME</a></li>
+		<li class="my fl"><a href="my_user.html">마이페이지</a></li>
+	</ul>
+	<!-- 땜빵맨 로그인 했을 때
+	<ul class="fnb fnb_men clearfix">
+		<li class="switch fl"><a href="javascript:;">고객전환</a></li>
+		<li class="home fl"><a href="javascript:;">HOME</a></li>
+		<li class="my fl"><a href="javascript:;">마이페이지</a></li>
+	</ul>-->
+</footer>
+</body>
+
+</html>
